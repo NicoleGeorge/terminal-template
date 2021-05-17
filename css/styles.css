@@ -35,6 +35,21 @@ a {
   text-decoration: none;
 }
 
+nav {
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
 .container {
   max-width: 600px;
   margin: auto;
@@ -47,4 +62,22 @@ a {
 
 .hidden {
   display: none;
+}
+
+/* CURSOR ANIMATION */
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--accent-color);
+  }
 }
