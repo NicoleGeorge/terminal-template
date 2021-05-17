@@ -9,5 +9,11 @@ about.addEventListener('click', () => {
   const aboutBox = new WinBox( {
     title: 'About Me',
     background: '#F2B591',
+    width: '450px',
+    height: '450px',
+    top: 50,
+    right: 50,
+    bottom: 50,
+    left: 50
   })
 })
