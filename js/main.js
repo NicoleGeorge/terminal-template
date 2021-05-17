@@ -18,3 +18,17 @@ about.addEventListener('click', () => {
     mount: aboutContent
   })
 })
+
+contact.addEventListener('click', () => {
+  const contactBox = new WinBox( {
+    title: 'Contact Me',
+    background: '#F2B591',
+    width: '450px',
+    height: '450px',
+    top: 150,
+    right: 50,
+    bottom: 50,
+    left: 250,
+    mount: contactContent
+  })
+})
