@@ -70,6 +70,11 @@ nav ul li {
   display: none;
 }
 
+.box-style {
+  color: #F2F2F2;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+
 /* CURSOR ANIMATION */
 
 .cursor {
