@@ -8,15 +8,20 @@ const contactContent = document.querySelector('#contact-content')
 about.addEventListener('click', () => {
   const aboutBox = new WinBox( {
     title: 'About Me',
-    background: '#F2B591',
     width: '450px',
     height: '450px',
     top: 50,
     right: 50,
     bottom: 50,
     left: 50,
-    mount: aboutContent
-  })
+    mount: aboutContent,
+    onfocus: function () {
+      this.setBackground('#F2B591')
+    },
+    onblur: function () {
+      this.setBackground('#F2C2D8')
+    },
+      })
 })
 
 contact.addEventListener('click', () => {
@@ -29,6 +34,12 @@ contact.addEventListener('click', () => {
     right: 50,
     bottom: 50,
     left: 250,
-    mount: contactContent
+    mount: contactContent,
+        onfocus: function () {
+      this.setBackground('#F2B591')
+    },
+    onblur: function () {
+      this.setBackground('#F2C2D8')
+    },
   })
 })
